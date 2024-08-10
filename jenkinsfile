@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout from GIT'){
             steps{
-               git branch: 'main', url: 'https://github.com/Vaishu-psv/terraform-1.git'
+               git branch: 'main', url: 'https://github.com/Nitinkumar-aswar/aws-infrastructure-using-jenkins-pipeline.git'
             }
         }
         stage('Terraform Init'){

@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage('checkout from GIT'){
+        stage('checkout from Git'){
             steps{
-               git branch: 'main', url: 'https://github.com/Nitinkumar-aswar/aws-infrastructure-using-jenkins-pipeline.git'
+               git branch: 'main', url:'https://github.com/Nitinkumar-aswar/aws-infrastructure-using-jenkins-pipeline.git'
             }
         }
         stage('Terraform Init'){
